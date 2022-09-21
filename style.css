@@ -1,6 +1,8 @@
 /*
 	1.All
 	2.Header
+	3.Main
+	4.Footer
 */
 /*------------------------
     1.All
@@ -26,6 +28,8 @@
 body{
     overflow-x: hidden;
 	font-family: var(--dana);
+	background-color: var(--blacktext);
+	height: 4000px;
 }
 li{
 	list-style:none;
@@ -51,12 +55,13 @@ a ,a:hover, a:focus, a:active ,a:visited{
 h1,h2,h3,h4,h5,h6{
 	padding:0px;
     margin:0px;
+	font-family: var(--dana);
 }
 p, figure{
 	margin: 0;
 }
 p{
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 2;
 }
 :focus, button:focus {
@@ -110,7 +115,147 @@ header ul li a:hover{
 .user-login:hover li ul{
 	opacity: 1;
 	visibility: visible;
+	z-index: 1;
 }
 .user-login li ul li{
 	padding: .5rem !important;
 }
+/*------------------------
+    3.Main
+------------------------*/
+.top-slider{
+	border-radius: var(--radius);
+}
+.mask{
+	background-color: #29292990;
+	border-radius: var(--radius);
+}
+.top-box{
+	height: 17.063rem;
+	overflow: hidden;
+}
+.top-box img{
+	height: 17.063rem;
+	object-fit: cover;
+}
+.top-box h3{
+	color: var(--whitebg);
+	font-size: 1.25rem;
+	transition: all .3s;
+}
+.top-box span{
+	font-size: 0.875rem;
+	color: var(--whitebg);
+}
+.top-box:hover h3{
+	margin-bottom: 1.5rem;
+}
+.section2-right{
+	height: 10.188rem;
+	background-color: var(--primary);
+	border-radius: var(--radius);
+	background-image: url(./assets/img/candle.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: var(--whitebg);
+}
+.section2-right h2{
+	font-size: 1.5rem;
+	color: var(--whitebg);
+}
+.section2-left{
+	height: 10.063rem;
+	background-color: var(--secondary);
+	border-radius: var(--radius);
+}
+.section2-left h2{
+	font-size: 1.375rem;
+	color: var(--whitebg);
+}
+.section2-left a{
+	border-radius: 1.25rem;
+}
+.section2-left ul li:first-child a{
+	background-color: #CB402B;
+	color: var(--blacktext);
+}
+.section2-left ul li:nth-child(2) a{
+	background-color: var(--blacktext);
+	color: var(--whitebg);
+}
+.section-title h2{
+	color: var(--whitebg);
+	font-size: 2.25rem;
+}
+.section-title a{
+	background-color: var(--primary);
+	color: var(--whitebg);
+	font-size: 1rem;
+	border-radius: 1.25rem;
+	line-height: 3;
+}
+.card{
+	background-color: var(--gray);
+	border-radius: var(--radius);
+}
+.card img{
+	border-radius: var(--radius);
+}
+.post-tag{
+	top: 1.8rem;
+	right: 1.8rem;
+	color: var(--whitebg);
+	background-color: var(--secondary);
+	border-radius: 0.75rem;
+}
+.post-tag:hover{
+	color: var(--whitebg);
+}
+.card span{
+	font-size: .875rem;
+	color: var(--whitebg);
+}
+.card h3{
+	font-size: 1.25rem;
+}
+.card h3 a{
+	color: var(--whitebg);
+}
+.post-detail i{
+	background-color: #1377a968;
+	color: var(--primary);
+	border-radius: .875rem;
+}
+.readmore{
+	background-color: var(--primary);
+	color: var(--whitebg);
+	bottom: -1.2rem;
+	left: 1rem;
+	border-radius: 1.25rem;
+}
+.readmore:hover{
+	color: var(--whitebg);
+}
+.category{
+	color: var(--whitebg);
+}
+.cat-background{
+	background-color: var(--gray);
+	border-radius: var(--radius);
+}
+/*------------------------
+    4.Footer
+------------------------*/
+.footer{
+	background-color: var(--primary);
+}
+.footer h2{
+	font-size: 1.25rem;
+	color: var(--whitebg);
+}
+.footer ul li a{
+	color: var(--whitebg);
+	padding: .3rem 0;
+	display: block;
+}
+
